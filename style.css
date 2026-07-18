@@ -1010,7 +1010,7 @@ ul {
     width: 280px;
     height: 280px;
     right: -10px;
-    opacity: 0.06;
+    opacity: 0.04;
   }
 }
 
@@ -1128,9 +1128,6 @@ ul {
     width: 180px;
     height: 180px;
     right: -5px;
-    bottom: 10%;
-    top: auto;
-    transform: none;
     opacity: 0.08;
   }
 
@@ -1176,8 +1173,7 @@ ul {
     width: 140px;
     height: 140px;
     right: -5px;
-    bottom: 8%;
-    opacity: 0.06;
+    opacity: 0.04;
   }
 
   .service-card {
