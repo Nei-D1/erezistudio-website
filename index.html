@@ -14,15 +14,28 @@
   <!-- ===== NAVIGATION ===== -->
   <nav class="navbar" aria-label="Navigation principale">
     <a href="#" class="logo" aria-label="Accueil Erezi Studio">
-      <!-- <svg class="logo__flame" viewBox="0 0 100 120" aria-hidden="true">
-        <path d="M50 5 C50 5, 80 35, 80 65 C80 85, 67 100, 50 105 C33 100, 20 85, 20 65 C20 35, 50 5, 50 5Z" fill="#8B1A1A"/>
-        <path d="M50 30 C50 30, 65 50, 65 65 C65 75, 58 82, 50 85 C42 82, 35 75, 35 65 C35 50, 50 30, 50 30Z" fill="white"/>
-        <path d="M50 55 C50 55, 57 63, 57 70 C57 75, 54 78, 50 80 C46 78, 43 75, 43 70 C43 63, 50 55, 50 55Z" fill="#8B1A1A"/>
-      </svg>
-      <span class="logo__name"><span>erezi</span> studio</span> -->
       <img src="erezi-studio-logo/erezi-logo-h-blanc.webp" alt="erezi studio logo">
     </a>
+
+    <!-- Checkbox (cachée) -->
+    <input type="checkbox" id="menuToggle" class="menu-toggle" />
+
+    <!-- Hamburger (visible sur mobile) -->
+    <label for="menuToggle" class="menu-icon" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <!-- ===== NOUVEAU : OVERLAY POUR FERMER EN CLIQUANT À CÔTÉ ===== -->
+    <label for="menuToggle" class="menu-overlay"></label>
+
+    <!-- Navigation (liens) -->
     <ul class="nav__links">
+      <!-- Croix de fermeture -->
+      <li class="menu-close">
+        <label for="menuToggle" aria-label="Fermer le menu">✕</label>
+      </li>
       <li><a href="#services">Services</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#about">Le Studio</a></li>
@@ -41,8 +54,8 @@
         et startups qui refusent l'ordinaire — de Haïti à l'international.
       </p>
       <div class="hero__actions">
-        <a href="#portfolio" class="btn btn--primary">Voir le portfolio</a>
-        <a href="#contact" class="btn btn--secondary">Démarrer un projet</a>
+        <a href="#portfolio" class="btn btn--secondary">Voir le portfolio</a>
+        <a href="#contact" class="btn btn--primary">Démarrer un projet</a>
       </div>
       <div class="hero__langs">
         <span>Nous travaillons en</span>
@@ -52,10 +65,7 @@
       </div>
     </div>
     <div class="hero__bg-flame" aria-hidden="true">
-      <!-- <svg viewBox="0 0 100 120">
-        <path d="M50 5 C50 5, 90 40, 90 70 C90 95, 73 115, 50 118 C27 115, 10 95, 10 70 C10 40, 50 5, 50 5Z" fill="white"/> -->
         <img src="erezi-studio-logo/erezi-logo-icon-blanc.webp" alt="erezi studio icon">
-      </svg>
     </div>
   </section>
 
@@ -555,6 +565,24 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </footer>
+  
+  <!-- ===== SCRIPTS ===== -->
+  <script>
+    // Fermeture automatique du menu mobile après clic sur un lien
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuToggle = document.getElementById('menuToggle');
+      const menuLinks = document.querySelectorAll('.nav__links a');
+
+      menuLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+          // Si le menu est ouvert (checkbox cochée), on le ferme
+          if (menuToggle.checked) {
+            menuToggle.checked = false;
+          }
+        });
+      });
+    });
+  </script>
 
   <script>
     const form = document.getElementById('contactForm');
