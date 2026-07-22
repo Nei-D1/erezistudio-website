@@ -183,7 +183,7 @@ ul {
   display: flex;
   align-items: center;
   gap: 10px;
-  width: 100px;
+  width: 120px;
   z-index: 101;
 }
 
@@ -996,6 +996,9 @@ ul {
 /* ============================================================
    RESPONSIVE
    ============================================================ */
+/* ============================================================
+   TABLETTE ET MOYENS ÉCRANS
+   ============================================================ */
 @media (max-width: 992px) {
   .about__inner,
   .contact__inner {
@@ -1006,14 +1009,35 @@ ul {
     order: -1;
   }
 
+  /* ---- Hero : hauteur réduite ---- */
+  .hero {
+    min-height: 60vh;
+    min-height: 60dvh;
+    padding: 60px 32px 40px;
+  }
+
+  /* ---- Icône centrée en arrière‑plan ---- */
   .hero__bg-flame {
-    width: 280px;
-    height: 280px;
-    right: -10px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    right: auto;
+    width: 70%;
+    max-width: 500px;
+    height: auto;
+    max-height: 80vh;
     opacity: 0.04;
+  }
+  .hero__bg-flame img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
   }
 }
 
+/* ============================================================
+   MOBILE (PORTRAIT & PAYSAGE)
+   ============================================================ */
 @media (max-width: 768px) {
   /* ---- Overlay ---- */
   .menu-overlay {
@@ -1024,7 +1048,6 @@ ul {
     z-index: 998;
     cursor: pointer;
   }
-
   #menuToggle:checked ~ .menu-overlay {
     display: block;
   }
@@ -1056,7 +1079,6 @@ ul {
     overflow-y: auto;
     border-left: 1px solid rgba(255, 255, 255, 0.05);
   }
-
   #menuToggle:checked ~ .nav__links {
     right: 0;
     pointer-events: auto;
@@ -1087,7 +1109,6 @@ ul {
     list-style: none;
     padding: 6px 0;
   }
-
   .nav__links a {
     font-size: 18px;
     font-weight: 500;
@@ -1099,12 +1120,10 @@ ul {
     border-radius: 4px;
     transition: background 0.2s, color 0.2s;
   }
-
   .nav__links a:hover {
     background: rgba(255, 255, 255, 0.05);
     color: var(--white);
   }
-
   .nav__links .btn--nav {
     background: var(--bordeaux);
     color: var(--white) !important;
@@ -1117,18 +1136,75 @@ ul {
     background: var(--bordeaux-light) !important;
   }
 
-  /* ---- Hero ---- */
+  /* ===== HERO MOBILE ===== */
   .hero {
-    padding: 80px 20px 60px;
+    min-height: 55vh;
+    min-height: 55dvh;
+    padding: 50px 16px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
   .hero__content {
-    margin-left: 0;
+    margin-left: 0 !important;
+    max-width: 100% !important;
+    padding: 0 10px;
+    width: 100%;
   }
+
+  .hero__eyebrow {
+    display: block !important;
+    font-size: 12px !important;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--bordeaux-light) !important;
+    margin-bottom: 8px !important;
+    margin-top: 12px !important;
+    padding: 4px 0;
+    text-align: left;
+  }
+
+  .hero__eyebrow::before {
+    content: '';
+    display: inline-block;
+    width: 28px;
+    height: 1.5px;
+    background: var(--bordeaux-light);
+    margin-right: 12px;
+    vertical-align: middle;
+  }
+
+  .hero__title {
+    font-size: clamp(30px, 6vw, 38px);
+    margin-bottom: 14px;
+    line-height: 1.1;
+  }
+
+  .hero__desc {
+    font-size: 14px;
+    margin-bottom: 24px;
+    max-width: 100%;
+  }
+
+  .hero__actions {
+    gap: 10px;
+  }
+
+  .hero__langs {
+    margin-top: 24px;
+    gap: 10px;
+  }
+
   .hero__bg-flame {
-    width: 180px;
-    height: 180px;
-    right: -5px;
-    opacity: 0.08;
+    width: 50%;
+    max-width: 280px;
+    opacity: 0.04;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    right: auto;
   }
 
   /* ---- Grilles ---- */
@@ -1137,16 +1213,13 @@ ul {
   .process__steps {
     grid-template-columns: 1fr;
   }
-
   .section {
     padding: 56px 0;
   }
-
   .portfolio__header {
     flex-direction: column;
     align-items: flex-start;
   }
-
   .form__row {
     grid-template-columns: 1fr;
   }
@@ -1167,12 +1240,18 @@ ul {
   }
 }
 
-/* ---- Très petits écrans ---- */
+/* ============================================================
+   TRÈS PETITS ÉCRANS (≤ 480px)
+   ============================================================ */
 @media (max-width: 480px) {
+  .hero {
+    min-height: 50vh;
+    min-height: 50dvh;
+    padding: 50px 16px 30px;
+  }
   .hero__bg-flame {
-    width: 140px;
-    height: 140px;
-    right: -5px;
+    width: 50%;
+    max-width: 250px;
     opacity: 0.04;
   }
 
