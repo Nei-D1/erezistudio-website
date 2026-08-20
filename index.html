@@ -1,4 +1,4 @@
-<body><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
@@ -27,12 +27,11 @@
       <span></span>
     </label>
 
-    <!-- ===== NOUVEAU : OVERLAY POUR FERMER EN CLIQUANT À CÔTÉ ===== -->
+    <!-- OVERLAY POUR FERMER EN CLIQUANT À CÔTÉ -->
     <label for="menuToggle" class="menu-overlay"></label>
 
     <!-- Navigation (liens) -->
     <ul class="nav__links">
-      <!-- Croix de fermeture -->
       <li class="menu-close">
         <label for="menuToggle" aria-label="Fermer le menu">✕</label>
       </li>
@@ -40,7 +39,7 @@
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#about">Le Studio</a></li>
       <li><a href="#process">Processus</a></li>
-      <li><a href="#contact" class="btn--nav">Démarrer un Projet</a></li>
+      <li><a href="#contact" class="btn btn--primary btn--nav">Démarrer un Projet</a></li>
     </ul>
   </nav>
 
@@ -54,7 +53,7 @@
         et startups qui refusent l'ordinaire — de Haïti à l'international.
       </p>
       <div class="hero__actions">
-        <a href="#portfolio" class="btn btn--secondary">Voir le portfolio</a>
+        <a href="#portfolio" class="btn btn--outline">Voir le portfolio</a>
         <a href="#contact" class="btn btn--primary">Démarrer un projet</a>
       </div>
       <div class="hero__langs">
@@ -65,352 +64,307 @@
       </div>
     </div>
     <div class="hero__bg-flame" aria-hidden="true">
-        <img src="erezi-studio-logo/erezi-logo-icon-blanc.webp" alt="erezi studio icon">
+      <img src="erezi-studio-logo/erezi-logo-icon-blanc.webp" alt="erezi studio icon">
     </div>
   </section>
 
   <!-- ===== SERVICES ===== -->
   <section class="section services" id="services">
     <div class="container">
-      <div class="section__header">
-        <p class="section__eyebrow">Notre Savoir-faire</p>
-        <h2 class="section__title">Nos services</h2>
-        <p class="section__sub">Des solutions visuelles complètes, adaptées à chaque étape de votre croissance.</p>
+      <div class="section-header">
+        <span class="section__eyebrow">Notre Savoir-faire</span>
+        <h2 class="section-title">Nos services</h2>
+        <p class="section-subtitle">Des solutions visuelles complètes, adaptées à chaque étape de votre croissance.</p>
       </div>
+
       <div class="services__grid">
 
         <!-- 01 · IDENTITÉ VISUELLE -->
         <article class="service-card">
-          <span class="service-card__number">01</span>
-          <svg class="service-card__icon" viewBox="0 0 40 40" aria-hidden="true">
-            <rect width="40" height="40" rx="4" fill="#8B1A1A" opacity="0.1"/>
-            <path d="M20 8 L28 20 L20 32 L12 20Z" fill="#8B1A1A" opacity="0.8"/>
-            <circle cx="20" cy="20" r="5" fill="#8B1A1A"/>
-          </svg>
-          <h3 class="service-card__name">Identité visuelle</h3>
-          <p class="service-card__desc">Logos et systèmes visuels conçus pour durer et porter votre message.</p>
-          <div class="service-card__levels">
+          <div class="service-card__header">
+            <span class="service-card__number">01</span>
+            <svg class="service-card__icon" viewBox="0 0 40 40" aria-hidden="true">
+              <rect width="40" height="40" rx="4" fill="#8B1A1A" opacity="0.1"/>
+              <path d="M20 8 L28 20 L20 32 L12 20Z" fill="#8B1A1A" opacity="0.8"/>
+              <circle cx="20" cy="20" r="5" fill="#8B1A1A"/>
+            </svg>
+            <h3 class="service-card__title">Identité visuelle</h3>
+            <p class="service-card__description">Logos et systèmes visuels conçus pour durer et porter votre message.</p>
+          </div>
+
+          <div class="level-list">
             <div class="level">
               <div class="level__info">
                 <span class="level__name">DÉCOUVERTE</span>
                 <span class="level__content">1 concept · 1 révision · PNG (H+V+mono)</span>
               </div>
-              <span class="level__price">
-                <span class="price-ht">$20–$30</span>
-                <span class="price-badge badge-ht">HT</span>
-                <span class="price-divider">·</span>
-                <span class="price-int">$80–$120</span>
-                <span class="price-badge badge-int">INT</span>
-              </span>
+              <span class="level__price">$20–$30 HT · $80–$120 INT</span>
             </div>
             <div class="level">
               <div class="level__info">
                 <span class="level__name">ESSENTIEL</span>
                 <span class="level__content">1 concept · 2 révisions · PNG+JPG · 2 variantes couleur</span>
               </div>
-              <span class="level__price">
-                <span class="price-ht">$30–$75</span>
-                <span class="price-badge badge-ht">HT</span>
-                <span class="price-divider">·</span>
-                <span class="price-int">$150–$250</span>
-                <span class="price-badge badge-int">INT</span>
-              </span>
+              <span class="level__price">$30–$75 HT · $150–$250 INT</span>
             </div>
             <div class="level">
               <div class="level__info">
                 <span class="level__name">PRO</span>
-                <span class="level__content">2-3 concepts · 3 révisions · PNG/JPG/SVG/PDF · H+V+icône · palette + typo · source inclus</span>
+                <span class="level__content">2-3 concepts · 3 révisions · PNG/JPG/SVG/PDF · H+V+icône</span>
               </div>
-              <span class="level__price">
-                <span class="price-ht">$75–$150</span>
-                <span class="price-badge badge-ht">HT</span>
-                <span class="price-divider">·</span>
-                <span class="price-int">$350–$600</span>
-                <span class="price-badge badge-int">INT</span>
-              </span>
+              <span class="level__price">$75–$150 HT · $350–$600 INT</span>
             </div>
             <div class="level">
               <div class="level__info">
                 <span class="level__name">SIGNATURE</span>
-                <span class="level__content">Tout PRO + charte graphique · carte de visite · en-tête · templates réseaux sociaux</span>
+                <span class="level__content">Tout PRO + charte graphique · carte de visite · templates RS</span>
               </div>
-              <span class="level__price">
-                <span class="price-ht">$200–$400</span>
-                <span class="price-badge badge-ht">HT</span>
-                <span class="price-divider">·</span>
-                <span class="price-int">$800–$1800</span>
-                <span class="price-badge badge-int">INT</span>
-              </span>
+              <span class="level__price">$200–$400 HT · $800–$1800 INT</span>
             </div>
           </div>
+
           <a href="#contact" class="service-card__link">Démarrer un projet →</a>
         </article>
 
         <!-- 02 · RÉSEAUX SOCIAUX -->
         <article class="service-card">
-          <span class="service-card__number">02</span>
-          <svg class="service-card__icon" viewBox="0 0 40 40" aria-hidden="true">
-            <rect width="40" height="40" rx="4" fill="#8B1A1A" opacity="0.1"/>
-            <rect x="8" y="10" width="24" height="14" rx="2" fill="#8B1A1A" opacity="0.6"/>
-            <rect x="8" y="26" width="10" height="6" rx="1" fill="#8B1A1A" opacity="0.4"/>
-            <rect x="22" y="26" width="10" height="6" rx="1" fill="#8B1A1A" opacity="0.4"/>
-          </svg>
-          <h3 class="service-card__name">Réseaux sociaux</h3>
-          <p class="service-card__desc">Création de contenu mensuel pour affirmer votre marque et engager votre communauté.</p>
-          <div class="service-card__levels">
+          <div class="service-card__header">
+            <span class="service-card__number">02</span>
+            <svg class="service-card__icon" viewBox="0 0 40 40" aria-hidden="true">
+              <rect width="40" height="40" rx="4" fill="#8B1A1A" opacity="0.1"/>
+              <rect x="8" y="10" width="24" height="14" rx="2" fill="#8B1A1A" opacity="0.6"/>
+              <rect x="8" y="26" width="10" height="6" rx="1" fill="#8B1A1A" opacity="0.4"/>
+              <rect x="22" y="26" width="10" height="6" rx="1" fill="#8B1A1A" opacity="0.4"/>
+            </svg>
+            <h3 class="service-card__title">Réseaux sociaux</h3>
+            <p class="service-card__description">Création de contenu mensuel pour affirmer votre marque et engager votre communauté.</p>
+          </div>
+
+          <div class="level-list">
             <div class="level">
               <div class="level__info">
                 <span class="level__name">ENTRÉE</span>
-                <span class="level__content">8 publications feed + 4 stories · 1 format · 1 révision · couverture + légende suggérée</span>
+                <span class="level__content">8 publications feed + 4 stories · 1 format · 1 révision</span>
               </div>
-              <span class="level__price">
-                <span class="price-ht">$85</span>
-                <span class="price-badge badge-ht">HT</span>
-                <span class="price-divider">·</span>
-                <span class="price-int">$200–$250</span>
-                <span class="price-badge badge-int">INT</span>
-                <span class="price-suffix">/mois</span>
-              </span>
+              <span class="level__price">$85 HT · $200–$250 INT /mois</span>
             </div>
             <div class="level">
               <div class="level__info">
                 <span class="level__name">CONFORT</span>
-                <span class="level__content">16 publications + 8 stories · 2 formats · 2 révisions · retouches mineures</span>
+                <span class="level__content">16 publications + 8 stories · 2 formats · 2 révisions</span>
               </div>
-              <span class="level__price">
-                <span class="price-ht">$150</span>
-                <span class="price-badge badge-ht">HT</span>
-                <span class="price-divider">·</span>
-                <span class="price-int">$350–$450</span>
-                <span class="price-badge badge-int">INT</span>
-                <span class="price-suffix">/mois</span>
-              </span>
+              <span class="level__price">$150 HT · $350–$450 INT /mois</span>
             </div>
             <div class="level">
               <div class="level__info">
                 <span class="level__name">PREMIUM</span>
-                <span class="level__content">24 publications + 12 stories (animées simples) · couvertures · retouches · 2 formats · 2 révisions · planification légère</span>
+                <span class="level__content">24 publications + 12 stories animées · couvertures · retouches</span>
               </div>
-              <span class="level__price">
-                <span class="price-ht">$280</span>
-                <span class="price-badge badge-ht">HT</span>
-                <span class="price-divider">·</span>
-                <span class="price-int">$600–$800</span>
-                <span class="price-badge badge-int">INT</span>
-                <span class="price-suffix">/mois</span>
-              </span>
+              <span class="level__price">$280 HT · $600–$800 INT /mois</span>
             </div>
           </div>
+
           <a href="#contact" class="service-card__link">Démarrer un retainer →</a>
         </article>
 
         <!-- 03 · PRINT & ÉVÉNEMENTIEL -->
         <article class="service-card">
-          <span class="service-card__number">03</span>
-          <svg class="service-card__icon" viewBox="0 0 40 40" aria-hidden="true">
-            <rect width="40" height="40" rx="4" fill="#8B1A1A" opacity="0.1"/>
-            <rect x="6" y="8" width="28" height="20" rx="2" fill="#8B1A1A" opacity="0.6"/>
-            <rect x="10" y="30" width="8" height="3" rx="1" fill="#8B1A1A" opacity="0.4"/>
-            <rect x="22" y="30" width="8" height="3" rx="1" fill="#8B1A1A" opacity="0.4"/>
-          </svg>
-          <h3 class="service-card__name">Print & Événementiel</h3>
-          <p class="service-card__desc">Supports imprimés et digitaux pour donner de l'impact à vos campagnes et événements.</p>
-          <div class="service-card__levels">
+          <div class="service-card__header">
+            <span class="service-card__number">03</span>
+            <svg class="service-card__icon" viewBox="0 0 40 40" aria-hidden="true">
+              <rect width="40" height="40" rx="4" fill="#8B1A1A" opacity="0.1"/>
+              <rect x="6" y="8" width="28" height="20" rx="2" fill="#8B1A1A" opacity="0.6"/>
+              <rect x="10" y="30" width="8" height="3" rx="1" fill="#8B1A1A" opacity="0.4"/>
+              <rect x="22" y="30" width="8" height="3" rx="1" fill="#8B1A1A" opacity="0.4"/>
+            </svg>
+            <h3 class="service-card__title">Print & Événementiel</h3>
+            <p class="service-card__description">Supports imprimés et digitaux pour donner de l'impact à vos campagnes et événements.</p>
+          </div>
+
+          <div class="level-list">
             <div class="level">
               <div class="level__info">
                 <span class="level__name">EXPRESS</span>
-                <span class="level__content">1 design · 1 révision · format prêt à imprimer (PDF) + JPG pour le web</span>
+                <span class="level__content">1 design · 1 révision · format prêt à imprimer (PDF) + JPG</span>
               </div>
-              <span class="level__price">
-                <span class="price-ht">$15–$40</span>
-                <span class="price-badge badge-ht">HT</span>
-                <span class="price-divider">·</span>
-                <span class="price-int">$60–$120</span>
-                <span class="price-badge badge-int">INT</span>
-              </span>
+              <span class="level__price">$15–$40 HT · $60–$120 INT</span>
             </div>
             <div class="level">
               <div class="level__info">
                 <span class="level__name">ÉVÉNEMENT</span>
-                <span class="level__content">1 design · 2 révisions · 2 formats (A4/paysage) · versions print + web · adaptation réseaux sociaux</span>
+                <span class="level__content">1 design · 2 révisions · 2 formats · print + web</span>
               </div>
-              <span class="level__price">
-                <span class="price-ht">$50–$120</span>
-                <span class="price-badge badge-ht">HT</span>
-                <span class="price-divider">·</span>
-                <span class="price-int">$150–$300</span>
-                <span class="price-badge badge-int">INT</span>
-              </span>
+              <span class="level__price">$50–$120 HT · $150–$300 INT</span>
             </div>
             <div class="level">
               <div class="level__info">
                 <span class="level__name">SUR MESURE</span>
-                <span class="level__content">Pack complet : flyers · bannières · roll-up · invitations · fichiers sources · identité visuelle étendue à tout le support</span>
+                <span class="level__content">Pack complet : flyers · bannières · roll-up · fichiers sources</span>
               </div>
-              <span class="level__price">
-                <span class="price-ht">$200–$450</span>
-                <span class="price-badge badge-ht">HT</span>
-                <span class="price-divider">·</span>
-                <span class="price-int">$500–$1200</span>
-                <span class="price-badge badge-int">INT</span>
-              </span>
+              <span class="level__price">$200–$450 HT · $500–$1200 INT</span>
             </div>
           </div>
+
           <a href="#contact" class="service-card__link">Demander un devis →</a>
         </article>
 
       </div>
-        <p class="services__footnote">Grille tarifaire adaptée : Tarifs nationaux (HT) et internationaux (INT) ajustés à votre marché.
-        <br /> Des suppléments et options sur mesure sont disponibles sur demande pour s'adapter précisément à l'envergure de votre projet.</p>
-      </div>
+
+      <p class="services__footnote">Grille tarifaire adaptée : Tarifs nationaux (HT) et internationaux (INT) ajustés à votre marché.<br /> Des suppléments et options sur mesure sont disponibles sur demande.</p>
     </div>
   </section>
 
-  <!-- ===== PORTFOLIO ===== -->
+  <!-- ===== PORTFOLIO (GRILLE ASYMÉTRIQUE) ===== -->
   <section class="section portfolio" id="portfolio">
     <div class="container">
-      <div class="section__header portfolio__header">
+      <div class="section-header portfolio__header">
         <div>
-          <p class="section__eyebrow">Travaux récents</p>
-          <h2 class="section__title">Portfolio</h2>
+          <span class="section__eyebrow">Travaux récents</span>
+          <h2 class="section-title">Portfolio</h2>
         </div>
-        <p class="section__sub">Projets réels et concepts. La qualité, pas le nombre d'années.</p>
+        <p class="section-subtitle">Projets réels et concepts. « La qualité, pas le nombre d'années ».</p>
       </div>
-      <div class="portfolio__grid">
 
-        <figure class="portfolio__item p1">
+      <div class="portfolio__grid">
+        
+        <!-- LOGO 1 (Carré - 4 colonnes) -->
+        <figure class="portfolio__item p1" data-type="logo">
           <div class="portfolio__placeholder">
             <img 
-              src="portfolio/fincap-logo-white.webp"
+              src="portfolio/logo/fincap-logo-white.webp"
               alt="Logo FinCap — identité visuelle pour une société de finance" 
               loading="lazy"
               class="portfolio__image"
-            >
+            />
           </div>
           <figcaption class="portfolio__overlay">
-            <span class="portfolio__overlay-title">FinCap</span>
-            <span class="portfolio__overlay-type">Identité visuelle · Finance</span>
+            <span class="portfolio__category">Logo</span>
+            <span class="portfolio__title">FinCap</span>
           </figcaption>
-          <div class="portfolio__label">
-            <span class="portfolio__label-name">FinCap</span>
-            <span class="portfolio__label-type">Logo · Finance</span>
-          </div>
         </figure>
 
-        <figure class="portfolio__item p2">
+        <!-- LOGO 2 (Carré - 4 colonnes) -->
+        <figure class="portfolio__item p2" data-type="logo">
           <div class="portfolio__placeholder">
             <img 
-              src="portfolio/albany-and-partners-logo-white.webp"
-              alt="Logo A&P — identité visuelle pour une cabinet de conseil" 
+              src="portfolio/logo/albany-and-partners-logo-white.webp"
+              alt="Logo Albany & Partners — identité visuelle" 
               loading="lazy"
               class="portfolio__image"
             />
           </div>
           <figcaption class="portfolio__overlay">
-            <span class="portfolio__overlay-title">Albany & Partners</span>
-            <span class="portfolio__overlay-type">Identité visuelle · Conseil</span>
+            <span class="portfolio__category">Logo</span>
+            <span class="portfolio__title">Albany & Partners</span>
           </figcaption>
-          <div class="portfolio__label">
-            <span class="portfolio__label-name">Albany & Partners</span>
-            <span class="portfolio__label-type">Logo · Conseil</span>
-          </div>
         </figure>
 
-        <figure class="portfolio__item p3">
+        <!-- LOGO 3 (Carré - 4 colonnes) -->
+        <figure class="portfolio__item p3" data-type="logo">
           <div class="portfolio__placeholder">
             <img 
-              src="portfolio/cepg-logo.webp"
-              alt="Logo CEPG — identité visuelle pour une Association de jeunes" 
+              src="portfolio/logo/cepg-logo.webp"
+              alt="Logo CEPG — identité visuelle" 
               loading="lazy"
               class="portfolio__image"
-            >
-          </div>
-          <figcaption class="portfolio__overlay">
-            <span class="portfolio__overlay-title">CEPG</span>
-            <span class="portfolio__overlay-type">Identité visuelle · Association</span>
-          </figcaption>
-          <div class="portfolio__label">
-            <span class="portfolio__label-name">CEPG</span>
-            <span class="portfolio__label-type">Logo · Association</span>
-          </div>
-        </figure>
-
-        <figure class="portfolio__item p4">
-          <div class="portfolio__placeholder">
-            <img 
-              src="portfolio/forum-des-orateurs-logo-new.webp" 
-              alt="Forum des Orateurs — nouveau logo" 
-              class="portfolio__image"
-              loading="lazy"
             />
           </div>
           <figcaption class="portfolio__overlay">
-            <span class="portfolio__overlay-title">Forum des Orateurs</span>
-            <span class="portfolio__overlay-type">Redesign · Débat & Éloquence</span>
+            <span class="portfolio__category">Logo</span>
+            <span class="portfolio__title">CEPG</span>
+          </figcaption>
+        </figure>
+
+        <!-- REDESIGN / LOGO 4 : Avant / Après (format large) -->
+        <figure class="portfolio__item p4" data-type="redesign">
+        <div class="portfolio__placeholder portfolio__placeholder--stacked">
+          <div class="logo-stack">
+            <div class="logo-stack__item">
               <img 
-              src="portfolio/forum-des-orateurs-logo-old-white.webp" 
-              alt="Ancien logo Forum des Orateurs" 
-              class="overlay-old-logo"
+                src="portfolio/logo/forum-des-orateurs-logo-old-color.webp" 
+                alt="Ancien logo Forum des Orateurs" 
+                class="logo-stack__image"
+                loading="lazy"
+              />
+              <span class="logo-stack__label">AVANT</span>
+            </div>
+            <div class="logo-stack__separator" aria-hidden="true">⟶</div>
+            <div class="logo-stack__item">
+              <img 
+                src="portfolio/logo/forum-des-orateurs-logo-new.webp" 
+                alt="Nouveau logo Forum des Orateurs" 
+                class="logo-stack__image"
+                loading="lazy"
+              />
+              <span class="logo-stack__label">APRÈS</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__label">
+          <span class="portfolio__label-name">Forum des Orateurs</span>
+          <span class="portfolio__label-type">Redesign · Avant / Après</span>
+        </div>
+        <figcaption class="portfolio__overlay">
+            <span class="portfolio__category">Redesign</span>
+            <span class="portfolio__title">Forum des Orateurs</span>
+          </figcaption>
+      </figure>
+
+        <!-- BRAND IDENTITY (Panoramique Large - 8 colonnes) -->
+        <figure class="portfolio__item p5" data-type="brand">
+          <div class="portfolio__placeholder">
+            <img 
+              src="portfolio/brand/blacky-beauty-brand3.1.jpg"
+              alt="Blacky Beauty — Brand Identity complète" 
+              class="portfolio__image"
               loading="lazy"
             />
-            <span class="overlay-badge">AVANT</span>
-          </figcaption>
-          <div class="portfolio__label">
-            <span class="portfolio__label-name">Forum des Orateurs</span>
-            <span class="portfolio__label-type">Redesign · Débat</span>
-          </div>
-        </figure>
-
-        <figure class="portfolio__item p5">
-          <div class="portfolio__placeholder">
-            <span class="mock-label">Bientôt disponible</span>
           </div>
           <figcaption class="portfolio__overlay">
-            <span class="portfolio__overlay-title">Projet en cours</span>
-            <span class="portfolio__overlay-type">Brand Identity</span>
+            <span class="portfolio__category">Brand Identity</span>
+            <span class="portfolio__title">Blacky Beauty</span>
           </figcaption>
-          <div class="portfolio__label">
-            <span class="portfolio__label-name">Projet en cours</span>
-            <span class="portfolio__label-type">Brand Identity</span>
-          </div>
         </figure>
 
-        <figure class="portfolio__item p6">
-          <div class="portfolio__placeholder">
-            <span class="mock-label">Bientôt disponible</span>
-          </div>
-          <figcaption class="portfolio__overlay">
-            <span class="portfolio__overlay-title">Projet en cours</span>
-            <span class="portfolio__overlay-type">Réseaux sociaux</span>
-          </figcaption>
-          <div class="portfolio__label">
-            <span class="portfolio__label-name">Projet en cours</span>
-            <span class="portfolio__label-type">Réseaux sociaux</span>
-          </div>
-        </figure>
-      </div>
+      <!-- SOCIAL MEDIA (Portrait - 4 colonnes) -->
+      <figure class="portfolio__item p6" data-type="social">
+        <div class="portfolio__placeholder">
+            <img 
+              src="portfolio/social/beakingsweet2.webp"
+              alt="Beaking Sweet — Social" 
+              class="portfolio__image"
+              loading="lazy"
+            />
+        </div>
+        <figcaption class="portfolio__overlay">
+          <span class="portfolio__category">Social Media</span>
+          <span class="portfolio__title">Beaking Sweet</span>
+        </figcaption>
+      </figure>
+
     </div>
   </section>
 
   <!-- ===== ABOUT ===== -->
-  <section class="section about" id="about">
+  <section class="section section--dark about" id="about">
     <div class="container about__inner">
       <div>
-        <p class="section__eyebrow about__eyebrow">Qui sommes-nous</p>
-        <h2 class="section__title light">Le design qui a quelque chose à dire.</h2>
-        <p class="section__sub light">
+        <span class="section__eyebrow about__eyebrow">Qui sommes-nous</span>
+        <h2 class="section-title light">Le design qui a quelque chose à dire.</h2>
+        <p class="section-subtitle light">
           Chez Erezi Studio, nous créons des identités visuelles qui ne se contentent pas d’être jolies : elles portent un message.
         </p>
-        <p class="section__sub light">
-          <br />
-          Basés en Haïti et ouverts sur le monde, nous accompagnons les entreprises, startups et associations dans leur déploiement. En français, en anglais ou en créole, nous traduisons votre vision en un langage visuel fort, capable de résonner auprès de votre public, d'ici ou d'ailleurs.
+        <p class="section-subtitle light" style="margin-top: 16px;">
+          Basés en Haïti et ouverts sur le monde, nous accompagnons les entreprises, startups et associations dans leur déploiement. En français, en anglais ou en créole, nous traduisons votre vision en un langage visuel fort.
         </p>
+
         <div class="about__stats">
           <div class="stat"><span class="stat__number">3</span><span class="stat__label">Langues</span></div>
           <div class="stat"><span class="stat__number">10+</span><span class="stat__label">Projets livrés</span></div>
           <div class="stat"><span class="stat__number">48h</span><span class="stat__label">Livraison express</span></div>
           <div class="stat"><span class="stat__number">100%</span><span class="stat__label">Intentionnel</span></div>
         </div>
+
         <div class="about__markets">
           <span class="about__markets-title">Marchés servis</span>
           <div class="tags">
@@ -426,10 +380,6 @@
 
       <div class="about__visual">
         <div class="about__card">
-          <!-- <svg class="about__card-flame" lass="about__card-flame">
-            <path d="M50 5 C50 5, 80 35, 80 65 C80 85, 67 100, 50 105 C33 100, 20 85, 20 65 C20 35, 50 5, 50 5Z" fill="rgba(255,255,255,0.15)"/>
-            <path d="M50 30 C50 30, 65 50, 65 65 C65 75, 58 82, 50 85 C42 82, 35 75, 35 65 C35 50, 50 30, 50 30Z" fill="rgba(255,255,255,0.3)"/>
-          </svg> -->
           <img class="about__card-flame" src="erezi-studio-logo/erezi-logo-icon-blanc.webp" alt="erezi studio icon">
           <blockquote class="about__card-quote">
             « Different by design » n'est pas un slogan. C'est notre façon de travailler.
@@ -446,10 +396,10 @@
   <!-- ===== PROCESS ===== -->
   <section class="section process" id="process">
     <div class="container">
-      <div class="section__header process__header">
-        <p class="section__eyebrow">Comment Nous Travaillons</p>
-        <h2 class="section__title">Le processus</h2>
-        <p class="section__sub">Une collaboration fluide, transparente et sans mauvaise surprise.</p>
+      <div class="section-header process__header">
+        <span class="section__eyebrow">Comment Nous Travaillons</span>
+        <h2 class="section-title">Le processus</h2>
+        <p class="section-subtitle">Une collaboration fluide, transparente et sans mauvaise surprise.</p>
       </div>
       <div class="process__steps">
         <div class="step"><span class="step__num">1</span><h3 class="step__title">Le Brief</h3><p class="step__desc">Vous décrivez votre projet, vos objectifs et votre budget. Le studio vous répond sous 24h.</p></div>
@@ -469,12 +419,13 @@
   </div>
 
   <!-- ===== CONTACT ===== -->
-  <section class="section contact" id="contact">
+  <section class="section section--dark contact" id="contact">
     <div class="container contact__inner">
       <div>
-        <p class="section__eyebrow contact__eyebrow">Donnons vie à vos idées</p>
-        <h2 class="section__title light">Démarrer<br />un projet</h2>
-        <p class="section__sub light">Réponse garantie sous 24h · Devis personnalisé gratuit.</p>
+        <span class="section__eyebrow contact__eyebrow">Donnons vie à vos idées</span>
+        <h2 class="section-title light">Démarrer<br />un projet</h2>
+        <p class="section-subtitle light">Réponse garantie sous 24h · Devis personnalisé gratuit.</p>
+
         <div class="contact__methods">
           <a href="mailto:contact.erezistudio@gmail.com" class="contact__method">
             <span class="contact__method-icon">
@@ -488,12 +439,6 @@
             </span>
             <div><span class="contact__method-label">WhatsApp</span><span class="contact__method-value">Message direct</span></div>
           </a>
-          <!--
-            <a href="https://behance.net" class="contact__method">
-              <span class="contact__method-icon">◈</span>
-              <div><span class="contact__method-label">Behance</span><span class="contact__method-value">Portfolio complet</span></div>
-            </a>
-          -->
         </div>
       </div>
 
@@ -544,7 +489,7 @@
           <label class="form__label">Décrivez votre projet</label>
           <textarea class="form__textarea" name="message" placeholder="Parlez-nous de votre entreprise, de vos besoins et de vos délais..." required></textarea>
         </div>
-        <button type="submit" class="btn btn--submit">Envoyer la demande →</button>
+        <button type="submit" class="btn btn--primary btn--submit">Envoyer la demande →</button>
         <div id="formFeedback" style="margin-top: 12px;"></div>
       </form>
     </div>
@@ -553,7 +498,7 @@
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="footer__left">
-      <img src="erezi-studio-logo/erezi-logo-icon-rouge.webp" alt="">
+      <img src="erezi-studio-logo/erezi-logo-icon-rouge.webp" alt="Erezi Studio Icon">
       <span class="footer__tagline">Different by design.</span>
       <span class="footer__copy">© 2026 Erezi Studio</span>
     </div>
@@ -565,7 +510,7 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </footer>
-  
+
   <!-- ===== SCRIPTS ===== -->
   <script>
     // Fermeture automatique du menu mobile après clic sur un lien
@@ -575,16 +520,14 @@
 
       menuLinks.forEach(function(link) {
         link.addEventListener('click', function() {
-          // Si le menu est ouvert (checkbox cochée), on le ferme
           if (menuToggle.checked) {
             menuToggle.checked = false;
           }
         });
       });
     });
-  </script>
 
-  <script>
+    // Envoi du formulaire
     const form = document.getElementById('contactForm');
     const feedback = document.getElementById('formFeedback');
 
