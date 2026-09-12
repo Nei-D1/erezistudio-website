@@ -1,561 +1,433 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Erezi Studio — Des identités qui restent</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..900&family=Edu+SA+Beginner:wght@400..700&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erezi Studio — Different by Design</title>
+    <meta name="description" content="Studio de design graphique indépendant basé en Haïti. Identités visuelles, branding et développement web pour entreprises locales et internationales.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ===== NAVIGATION ===== -->
-  <nav class="navbar" aria-label="Navigation principale">
-    <a href="#" class="logo" aria-label="Accueil Erezi Studio">
-      <img src="erezi-studio-logo/erezi-logo-h-blanc.webp" alt="erezi studio logo">
-    </a>
+    <!-- Fixed Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo-link" aria-label="Erezi Studio — Accueil">
+                <img src="erezi-studio-logo/erezi-logo-h_w.webp" alt="Erezi Studio" class="logo">
+            </a>
 
-    <!-- Checkbox (cachée) -->
-    <input type="checkbox" id="menuToggle" class="menu-toggle" />
+            <button class="hamburger" id="hamburger-btn" aria-label="Menu navigation" aria-expanded="false">
+                <span class="bar bar-1"></span>
+                <span class="bar bar-2"></span>
+            </button>
 
-    <!-- Hamburger (visible sur mobile) -->
-    <label for="menuToggle" class="menu-icon" aria-label="Menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
+            <nav class="nav-menu" id="nav-menu">
+                <div class="nav-links-wrapper">
+                    <a href="#services" class="nav-link">Expertises</a>
+                    <a href="#portfolio" class="nav-link">Travaux</a>
+                    <a href="#about" class="nav-link">Studio</a>
+                    <a href="#contact" class="btn-cta-nav nav-link">Démarrer un projet</a>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-    <!-- OVERLAY POUR FERMER EN CLIQUANT À CÔTÉ -->
-    <label for="menuToggle" class="menu-overlay"></label>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1 class="hero-title">
+                Building enduring brands to elevate businesses, culture, and Haiti's visual landscape.
+            </h1>
 
-    <!-- Navigation (liens) -->
-    <ul class="nav__links">
-      <li class="menu-close">
-        <label for="menuToggle" aria-label="Fermer le menu">✕</label>
-      </li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#about">Le Studio</a></li>
-      <li><a href="#process">Processus</a></li>
-      <li><a href="#contact" class="btn btn--primary btn--nav">Démarrer un Projet</a></li>
-    </ul>
-  </nav>
+            <div class="hero-meta">
+                <p class="hero-subtitle">
+                    Nous concevons des identités visuelles mémorables et des plateformes web sur-mesure, adaptées aux réalités locales et aux standards internationaux.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn-primary">Démarrer un projet</a>
+                    <a href="#portfolio" class="btn-ghost">Voir les travaux <span class="arrow">→</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- ===== HERO ===== -->
-  <section class="hero" id="home">
-    <div class="hero__content">
-      <p class="hero__eyebrow">Studio de design graphique · Haïti</p>
-      <h1 class="hero__title">Des identités <br />qui <span class="accent">restent.</span></h1>
-      <p class="hero__desc">
-        Nous créons des identités visuelles pour les entreprises, associations
-        et startups qui refusent l'ordinaire — de Haïti à l'international.
-      </p>
-      <div class="hero__actions">
-        <a href="#portfolio" class="btn btn--outline">Voir le portfolio</a>
-        <a href="#contact" class="btn btn--primary">Démarrer un projet</a>
-      </div>
-      <div class="hero__langs">
-        <span>Nous travaillons en</span>
-        <span class="lang-badge">Kreyòl</span>
-        <span class="lang-badge">Français</span>
-        <span class="lang-badge">English</span>
-      </div>
+    <!-- MARQUEE -->
+    <div class="marquee-strip" aria-hidden="true">
+        <div class="marquee-track">
+            <span>Identité visuelle</span><span class="sep">/</span>
+            <span>Branding</span><span class="sep">/</span>
+            <span>Web design</span><span class="sep">/</span>
+            <span>Social media</span><span class="sep">/</span>
+            <span>Direction artistique</span><span class="sep">/</span>
+            <span>Identité visuelle</span><span class="sep">/</span>
+            <span>Branding</span><span class="sep">/</span>
+            <span>Web design</span><span class="sep">/</span>
+            <span>Social media</span><span class="sep">/</span>
+            <span>Direction artistique</span><span class="sep">/</span>
+        </div>
     </div>
-    <div class="hero__bg-flame" aria-hidden="true">
-      <img src="erezi-studio-logo/erezi-logo-icon-blanc.webp" alt="erezi studio icon">
+
+    <!-- SERVICES -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">01 — Expertises</span>
+                <h2>Des solutions sur mesure adaptées à vos besoins.</h2>
+            </div>
+
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-head">
+                        <span class="service-index">01</span>
+                        <span class="service-price">À partir de 50 $ US</span>
+                    </div>
+                    <h3>Identité Visuelle & Branding</h3>
+                    <p>Construction d'un langage de marque complet — du logotype vectoriel aux directives d'usage, pensé pour vieillir avec grâce.</p>
+                    <ul class="service-list">
+                        <li><strong>Découverte</strong> — Concept logo essentiel & livrables vectoriels.</li>
+                        <li><strong>Essentiel Pro</strong> — Système visuel complet, typographies, kit digital.</li>
+                        <li><strong>Signature</strong> — Charte graphique intégrale & brand assets.</li>
+                    </ul>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-head">
+                        <span class="service-index">02</span>
+                        <span class="service-price">À partir de 150 $ US</span>
+                    </div>
+                    <h3>Développement Web & Digital</h3>
+                    <p>Sites vitrines, portfolios et plateformes rapides — conçus pour convertir autant que pour impressionner.</p>
+                    <ul class="service-list">
+                        <li><strong>Landing Page</strong> — Page unique orientée conversion.</li>
+                        <li><strong>Site Vitrine</strong> — Architecture multi-pages sur-mesure.</li>
+                        <li><strong>E-Commerce</strong> — Catalogue, panier, paiements sécurisés.</li>
+                    </ul>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-head">
+                        <span class="service-index">03</span>
+                        <span class="service-price">À partir de 100 $ US / mois</span>
+                    </div>
+                    <h3>Social Media Retainer</h3>
+                    <p>Accompagnement mensuel pour maintenir et faire évoluer la présence visuelle de votre marque.</p>
+                    <ul class="service-list">
+                        <li><strong>Basique</strong> — Rythme de publication continu, visuels HD.</li>
+                        <li><strong>Confort</strong> — Volume étendu, déclinaisons multi-formats.</li>
+                        <li><strong>Premium</strong> — Direction artistique complète.</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-header split">
+                <div>
+                    <span class="section-num">02 — Travaux sélectionnés</span>
+                    <h2>Études de cas & réalisations récentes.</h2>
+                </div>
+                <p class="section-desc">Une sélection de projets menés entre 2024 et 2026, mêlant institutions, associations et entreprises locales.</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <article class="portfolio-card" data-modal="modal-fincap">
+                    <div class="portfolio-img-wrapper p1">
+                        <img src="portfolio/logo/fincap-logo-white.webp" alt="FinCap" class="portfolio-img">
+                        <div class="portfolio-hover">
+                            <span>Voir l'étude de cas</span>
+                            <span class="arrow">→</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-meta">
+                            <span class="project-tag">Branding · Finance</span>
+                            <span class="project-year">2025</span>
+                        </div>
+                        <h3>FinCap™</h3>
+                        <p>Architecture de marque premium reflétant stabilité financière et croissance analytique.</p>
+                    </div>
+                </article>
+
+                <article class="portfolio-card" data-modal="modal-albany">
+                    <div class="portfolio-img-wrapper p2">
+                        <img src="portfolio/logo/albany-and-partners-logo.webp" alt="Albany & Partners" class="portfolio-img">
+                        <div class="portfolio-hover">
+                            <span>Voir l'étude de cas</span>
+                            <span class="arrow">→</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-meta">
+                            <span class="project-tag">Corporate</span>
+                            <span class="project-year">2026</span>
+                        </div>
+                        <h3>Albany & Partners</h3>
+                        <p>Identité statutaire pour un cabinet de conseil stratégique et d'affaires.</p>
+                    </div>
+                </article>
+
+                <article class="portfolio-card" data-modal="modal-forum">
+                    <div class="portfolio-img-wrapper p3">
+                        <img src="portfolio/logo/forum-des-orateurs-logo-new.webp" alt="Forum des Orateurs" class="portfolio-img">
+                        <div class="portfolio-hover">
+                            <span>Voir l'étude de cas</span>
+                            <span class="arrow">→</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-meta">
+                            <span class="project-tag">Rebranding</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3>Forum des Orateurs</h3>
+                        <p>Refonte graphique et monogramme pour une association de débat & d'art oratoire.</p>
+                    </div>
+                </article>
+
+                <article class="portfolio-card" data-modal="modal-cepg">
+                    <div class="portfolio-img-wrapper p4">
+                        <img src="portfolio/logo/cepg-logo.webp" alt="CEPG" class="portfolio-img">
+                        <div class="portfolio-hover">
+                            <span>Voir l'étude de cas</span>
+                            <span class="arrow">→</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-meta">
+                            <span class="project-tag">Association</span>
+                            <span class="project-year">2026</span>
+                        </div>
+                        <h3>CEPG</h3>
+                        <p>Système visuel ancré dans le territoire pour le Collectif des Étudiants Petit-Goaviens.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODALES -->
+    <div id="modal-fincap" class="portfolio-modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Fermer">&times;</button>
+            <span class="project-tag">Étude de cas — Finance</span>
+            <h2>FinCap™</h2>
+            <div class="modal-body">
+                <p><strong>Objectif.</strong> Concevoir un langage visuel véhiculant rigueur institutionnelle, modélisation statistique et fiabilité des capitaux.</p>
+                <ul>
+                    <li>Blason symbolisant la courbe de distribution et la croissance boursière.</li>
+                    <li>Système typographique à empattements haut de gamme.</li>
+                    <li>Déclinaisons sombres et claires pour rapports d'investisseurs.</li>
+                </ul>
+            </div>
+        </div>
     </div>
-  </section>
 
-  <!-- ===== SERVICES ===== -->
-  <section class="section services" id="services">
-    <div class="container">
-      <div class="section-header">
-        <span class="section__eyebrow">Notre Savoir-faire</span>
-        <h2 class="section-title">Nos services</h2>
-        <p class="section-subtitle">Des solutions visuelles complètes, adaptées à chaque étape de votre croissance.</p>
-      </div>
-
-      <div class="services__grid">
-
-        <!-- 01 · IDENTITÉ VISUELLE -->
-        <article class="service-card">
-          <div class="service-card__header">
-            <span class="service-card__number">01</span>
-            <svg class="service-card__icon" viewBox="0 0 40 40" aria-hidden="true">
-              <rect width="40" height="40" rx="4" fill="#8B1A1A" opacity="0.1"/>
-              <path d="M20 8 L28 20 L20 32 L12 20Z" fill="#8B1A1A" opacity="0.8"/>
-              <circle cx="20" cy="20" r="5" fill="#8B1A1A"/>
-            </svg>
-            <h3 class="service-card__title">Identité visuelle</h3>
-            <p class="service-card__description">Logos et systèmes visuels conçus pour durer et porter votre message.</p>
-          </div>
-
-          <div class="level-list">
-            <div class="level">
-              <div class="level__info">
-                <span class="level__name">DÉCOUVERTE</span>
-                <span class="level__content">1 concept · 1 révision · PNG (H+V+mono)</span>
-              </div>
-              <span class="level__price">$20–$30 HT · $80–$120 INT</span>
+    <div id="modal-albany" class="portfolio-modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Fermer">&times;</button>
+            <span class="project-tag">Étude de cas — Consultation</span>
+            <h2>Albany & Partners</h2>
+            <div class="modal-body">
+                <p><strong>Objectif.</strong> Imposer une présence internationale sobre et statutaire pour un cabinet de consultants en affaires.</p>
+                <ul>
+                    <li>Monogramme intégrant l'esperluette dans une structure géométrique.</li>
+                    <li>Grille d'alignement pour papeterie corporate et plaques professionnelles.</li>
+                    <li>Déclinaisons "mark isolée" pour avatars et favicons.</li>
+                </ul>
             </div>
-            <div class="level">
-              <div class="level__info">
-                <span class="level__name">ESSENTIEL</span>
-                <span class="level__content">1 concept · 2 révisions · PNG+JPG · 2 variantes couleur</span>
-              </div>
-              <span class="level__price">$30–$75 HT · $150–$250 INT</span>
-            </div>
-            <div class="level">
-              <div class="level__info">
-                <span class="level__name">PRO</span>
-                <span class="level__content">2-3 concepts · 3 révisions · PNG/JPG/SVG/PDF · H+V+icône</span>
-              </div>
-              <span class="level__price">$75–$150 HT · $350–$600 INT</span>
-            </div>
-            <div class="level">
-              <div class="level__info">
-                <span class="level__name">SIGNATURE</span>
-                <span class="level__content">Tout PRO + charte graphique · carte de visite · templates RS</span>
-              </div>
-              <span class="level__price">$200–$400 HT · $800–$1800 INT</span>
-            </div>
-          </div>
-
-          <a href="#contact" class="service-card__link">Démarrer un projet →</a>
-        </article>
-
-        <!-- 02 · RÉSEAUX SOCIAUX -->
-        <article class="service-card">
-          <div class="service-card__header">
-            <span class="service-card__number">02</span>
-            <svg class="service-card__icon" viewBox="0 0 40 40" aria-hidden="true">
-              <rect width="40" height="40" rx="4" fill="#8B1A1A" opacity="0.1"/>
-              <rect x="8" y="10" width="24" height="14" rx="2" fill="#8B1A1A" opacity="0.6"/>
-              <rect x="8" y="26" width="10" height="6" rx="1" fill="#8B1A1A" opacity="0.4"/>
-              <rect x="22" y="26" width="10" height="6" rx="1" fill="#8B1A1A" opacity="0.4"/>
-            </svg>
-            <h3 class="service-card__title">Réseaux sociaux</h3>
-            <p class="service-card__description">Création de contenu mensuel pour affirmer votre marque et engager votre communauté.</p>
-          </div>
-
-          <div class="level-list">
-            <div class="level">
-              <div class="level__info">
-                <span class="level__name">ENTRÉE</span>
-                <span class="level__content">8 publications feed + 4 stories · 1 format · 1 révision</span>
-              </div>
-              <span class="level__price">$85 HT · $200–$250 INT /mois</span>
-            </div>
-            <div class="level">
-              <div class="level__info">
-                <span class="level__name">CONFORT</span>
-                <span class="level__content">16 publications + 8 stories · 2 formats · 2 révisions</span>
-              </div>
-              <span class="level__price">$150 HT · $350–$450 INT /mois</span>
-            </div>
-            <div class="level">
-              <div class="level__info">
-                <span class="level__name">PREMIUM</span>
-                <span class="level__content">24 publications + 12 stories animées · couvertures · retouches</span>
-              </div>
-              <span class="level__price">$280 HT · $600–$800 INT /mois</span>
-            </div>
-          </div>
-
-          <a href="#contact" class="service-card__link">Démarrer un retainer →</a>
-        </article>
-
-        <!-- 03 · PRINT & ÉVÉNEMENTIEL -->
-        <article class="service-card">
-          <div class="service-card__header">
-            <span class="service-card__number">03</span>
-            <svg class="service-card__icon" viewBox="0 0 40 40" aria-hidden="true">
-              <rect width="40" height="40" rx="4" fill="#8B1A1A" opacity="0.1"/>
-              <rect x="6" y="8" width="28" height="20" rx="2" fill="#8B1A1A" opacity="0.6"/>
-              <rect x="10" y="30" width="8" height="3" rx="1" fill="#8B1A1A" opacity="0.4"/>
-              <rect x="22" y="30" width="8" height="3" rx="1" fill="#8B1A1A" opacity="0.4"/>
-            </svg>
-            <h3 class="service-card__title">Print & Événementiel</h3>
-            <p class="service-card__description">Supports imprimés et digitaux pour donner de l'impact à vos campagnes et événements.</p>
-          </div>
-
-          <div class="level-list">
-            <div class="level">
-              <div class="level__info">
-                <span class="level__name">EXPRESS</span>
-                <span class="level__content">1 design · 1 révision · format prêt à imprimer (PDF) + JPG</span>
-              </div>
-              <span class="level__price">$15–$40 HT · $60–$120 INT</span>
-            </div>
-            <div class="level">
-              <div class="level__info">
-                <span class="level__name">ÉVÉNEMENT</span>
-                <span class="level__content">1 design · 2 révisions · 2 formats · print + web</span>
-              </div>
-              <span class="level__price">$50–$120 HT · $150–$300 INT</span>
-            </div>
-            <div class="level">
-              <div class="level__info">
-                <span class="level__name">SUR MESURE</span>
-                <span class="level__content">Pack complet : flyers · bannières · roll-up · fichiers sources</span>
-              </div>
-              <span class="level__price">$200–$450 HT · $500–$1200 INT</span>
-            </div>
-          </div>
-
-          <a href="#contact" class="service-card__link">Demander un devis →</a>
-        </article>
-
-      </div>
-
-      <p class="services__footnote">Grille tarifaire adaptée : Tarifs nationaux (HT) et internationaux (INT) ajustés à votre marché.<br /> Des suppléments et options sur mesure sont disponibles sur demande.</p>
+        </div>
     </div>
-  </section>
 
-  <!-- ===== PORTFOLIO (GRILLE ASYMÉTRIQUE) ===== -->
-  <section class="section portfolio" id="portfolio">
-    <div class="container">
-      <div class="section-header portfolio__header">
-        <div>
-          <span class="section__eyebrow">Travaux récents</span>
-          <h2 class="section-title">Portfolio</h2>
-        </div>
-        <p class="section-subtitle">Projets réels et concepts. « La qualité, pas le nombre d'années ».</p>
-      </div>
-
-      <div class="portfolio__grid">
-        
-        <!-- LOGO 1 (Carré - 4 colonnes) -->
-        <figure class="portfolio__item p1" data-type="logo">
-          <div class="portfolio__placeholder">
-            <img 
-              src="portfolio/logo/fincap-logo-white.webp"
-              alt="Logo FinCap — identité visuelle pour une société de finance" 
-              loading="lazy"
-              class="portfolio__image"
-            />
-          </div>
-          <figcaption class="portfolio__overlay">
-            <span class="portfolio__category">Logo</span>
-            <span class="portfolio__title">FinCap</span>
-          </figcaption>
-        </figure>
-
-        <!-- LOGO 2 (Carré - 4 colonnes) -->
-        <figure class="portfolio__item p2" data-type="logo">
-          <div class="portfolio__placeholder">
-            <img 
-              src="portfolio/logo/albany-and-partners-logo-white.webp"
-              alt="Logo Albany & Partners — identité visuelle" 
-              loading="lazy"
-              class="portfolio__image"
-            />
-          </div>
-          <figcaption class="portfolio__overlay">
-            <span class="portfolio__category">Logo</span>
-            <span class="portfolio__title">Albany & Partners</span>
-          </figcaption>
-        </figure>
-
-        <!-- LOGO 3 (Carré - 4 colonnes) -->
-        <figure class="portfolio__item p3" data-type="logo">
-          <div class="portfolio__placeholder">
-            <img 
-              src="portfolio/logo/cepg-logo.webp"
-              alt="Logo CEPG — identité visuelle" 
-              loading="lazy"
-              class="portfolio__image"
-            />
-          </div>
-          <figcaption class="portfolio__overlay">
-            <span class="portfolio__category">Logo</span>
-            <span class="portfolio__title">CEPG</span>
-          </figcaption>
-        </figure>
-
-        <!-- REDESIGN / LOGO 4 : Avant / Après (format large) -->
-        <figure class="portfolio__item p4" data-type="redesign">
-        <div class="portfolio__placeholder portfolio__placeholder--stacked">
-          <div class="logo-stack">
-            <div class="logo-stack__item">
-              <img 
-                src="portfolio/logo/forum-des-orateurs-logo-old-color.webp" 
-                alt="Ancien logo Forum des Orateurs" 
-                class="logo-stack__image"
-                loading="lazy"
-              />
-              <span class="logo-stack__label">AVANT</span>
+    <div id="modal-forum" class="portfolio-modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Fermer">&times;</button>
+            <span class="project-tag">Étude de cas — Rebranding</span>
+            <h2>Forum des Orateurs</h2>
+            <div class="modal-body">
+                <p><strong>Objectif.</strong> Moderniser l'image d'une organisation d'éloquence sans perdre sa symbolique d'origine.</p>
+                <div class="brand-comparison">
+                    <span>Version précédente</span>
+                    <img src="portfolio/logo/forum-des-orateurs-logo-old-color.webp" alt="Ancien logo" class="old-logo-preview">
+                </div>
+                <ul>
+                    <li>Redessin du monogramme F-O avec dégradé continu Bleu → Rouge.</li>
+                    <li>Nettoyage typographique de la devise latine « Disputatio eloquentiam parit ».</li>
+                    <li>Saturation des couleurs ajustée pour renforcer la présence du logo sur tous supports.</li>
+                </ul>
             </div>
-            <div class="logo-stack__separator" aria-hidden="true">⟶</div>
-            <div class="logo-stack__item">
-              <img 
-                src="portfolio/logo/forum-des-orateurs-logo-new.webp" 
-                alt="Nouveau logo Forum des Orateurs" 
-                class="logo-stack__image"
-                loading="lazy"
-              />
-              <span class="logo-stack__label">APRÈS</span>
+        </div>
+    </div>
+
+    <div id="modal-cepg" class="portfolio-modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Fermer">&times;</button>
+            <span class="project-tag">Étude de cas — Association</span>
+            <h2>CEPG</h2>
+            <div class="modal-body">
+                <p><strong>Objectif.</strong> Créer un symbole fédérateur immédiatement reconnaissable pour un rassemblement étudiant.</p>
+                <ul>
+                    <li>Vectorisation topographique du territoire de Petit-Goâve.</li>
+                    <li>Charte lisible sur bannières web, textile et badges événementiels.</li>
+                    <li>Découpage des sources SVG pour impression textile.</li>
+                </ul>
             </div>
-          </div>
         </div>
-        <div class="portfolio__label">
-          <span class="portfolio__label-name">Forum des Orateurs</span>
-          <span class="portfolio__label-type">Redesign · Avant / Après</span>
-        </div>
-        <figcaption class="portfolio__overlay">
-            <span class="portfolio__category">Redesign</span>
-            <span class="portfolio__title">Forum des Orateurs</span>
-          </figcaption>
-      </figure>
-
-        <!-- BRAND IDENTITY (Panoramique Large - 8 colonnes) -->
-        <figure class="portfolio__item p5" data-type="brand">
-          <div class="portfolio__placeholder">
-            <img 
-              src="portfolio/brand/blacky-beauty-brand3.1.jpg"
-              alt="Blacky Beauty — Brand Identity complète" 
-              class="portfolio__image"
-              loading="lazy"
-            />
-          </div>
-          <figcaption class="portfolio__overlay">
-            <span class="portfolio__category">Brand Identity</span>
-            <span class="portfolio__title">Blacky Beauty</span>
-          </figcaption>
-        </figure>
-
-      <!-- SOCIAL MEDIA (Portrait - 4 colonnes) -->
-      <figure class="portfolio__item p6" data-type="social">
-        <div class="portfolio__placeholder">
-            <img 
-              src="portfolio/social/beakingsweet2.webp"
-              alt="Beaking Sweet — Social" 
-              class="portfolio__image"
-              loading="lazy"
-            />
-        </div>
-        <figcaption class="portfolio__overlay">
-          <span class="portfolio__category">Social Media</span>
-          <span class="portfolio__title">Beaking Sweet</span>
-        </figcaption>
-      </figure>
-
     </div>
-  </section>
 
-  <!-- ===== ABOUT ===== -->
-  <section class="section section--dark about" id="about">
-    <div class="container about__inner">
-      <div>
-        <span class="section__eyebrow about__eyebrow">Qui sommes-nous</span>
-        <h2 class="section-title light">Le design qui a quelque chose à dire.</h2>
-        <p class="section-subtitle light">
-          Chez Erezi Studio, nous créons des identités visuelles qui ne se contentent pas d’être jolies : elles portent un message.
-        </p>
-        <p class="section-subtitle light" style="margin-top: 16px;">
-          Basés en Haïti et ouverts sur le monde, nous accompagnons les entreprises, startups et associations dans leur déploiement. En français, en anglais ou en créole, nous traduisons votre vision en un langage visuel fort.
-        </p>
+    <!-- MANIFESTE + STATS -->
+    <section id="about" class="manifesto-section">
+        <div class="container">
+            <div class="manifesto-grid">
+                <div class="manifesto-label">
+                    <span class="section-num">03 — Manifeste</span>
+                </div>
+                <div class="manifesto-text">
+                    <p class="manifesto-lead">
+                        « Different by design » n'est pas qu'un slogan. C'est notre façon de travailler.
+                    </p>
+                    <p>Chez Erezi Studio, nous combinons rigueur stratégique, précision vectorielle et sensibilité culturelle. Chaque projet est pensé comme un système : cohérent, documenté, et conçu pour évoluer sans se démoder.</p>
+                    <p>Nous travaillons en français, anglais et créole haïtien avec la même exigence pour tous nos projets.</p>
+                </div>
+            </div>
 
-        <div class="about__stats">
-          <div class="stat"><span class="stat__number">3</span><span class="stat__label">Langues</span></div>
-          <div class="stat"><span class="stat__number">10+</span><span class="stat__label">Projets livrés</span></div>
-          <div class="stat"><span class="stat__number">48h</span><span class="stat__label">Livraison express</span></div>
-          <div class="stat"><span class="stat__number">100%</span><span class="stat__label">Intentionnel</span></div>
+            <div class="manifesto-stats">
+                <div class="stat-item">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Identités livrées</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">03</span>
+                    <span class="stat-label">Langues de travail</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Livrables vectoriels</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24h</span>
+                    <span class="stat-label">Délai de réponse</span>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="about__markets">
-          <span class="about__markets-title">Marchés servis</span>
-          <div class="tags">
-            <span class="tag">Haïti</span>
-            <span class="tag">Diaspora haïtienne</span>
-            <span class="tag">Afrique francophone</span>
-            <span class="tag">Europe francophone</span>
-            <span class="tag">USA / Canada</span>
-            <span class="tag">International</span>
-          </div>
+    <!-- CONTACT -->
+    <section id="contact" class="cta-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-intro">
+                    <span class="section-num">04 — Contact</span>
+                    <h2>Parlons de votre projet.</h2>
+                    <p>Décrivez-nous votre contexte en quelques lignes. Nous revenons vers vous sous 24 à 48 heures avec une proposition adaptée.</p>
+
+                    <div class="contact-direct">
+                        <a href="https://wa.me/50955037709" target="_blank" rel="noopener" class="contact-btn contact-btn-primary">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                            <span>Discuter sur WhatsApp</span>
+                        </a>
+                        <a href="mailto:contact.erezistudio@gmail.com" class="contact-btn contact-btn-outline">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                            <span>Envoyer un email</span>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form" novalidate>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="name">Nom / Entreprise</label>
+                            <input type="text" id="name" name="name" required autocomplete="name">
+                        </div>
+                        <div class="form-field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required autocomplete="email">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="phone">Téléphone / WhatsApp <span class="optional">(optionnel)</span></label>
+                            <input type="tel" id="phone" name="phone" autocomplete="tel">
+                        </div>
+                        <div class="form-field">
+                            <label for="service">Service recherché</label>
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Sélectionner…</option>
+                                <option value="branding">Identité visuelle & branding</option>
+                                <option value="web">Site web / e-commerce</option>
+                                <option value="retainer">Retainer social media</option>
+                                <option value="audit">Audit & conseil express</option>
+                                <option value="full">Pack complet (branding + web)</option>
+                                <option value="custom">Projet sur-mesure</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="budget">Budget estimé</label>
+                        <select id="budget" name="budget" required>
+                            <option value="" disabled selected>Sélectionner une fourchette…</option>
+                            <option value="starter">Moins de 100 $ US</option>
+                            <option value="standard">100 – 500 $ US</option>
+                            <option value="premium">500 – 1 500 $ US</option>
+                            <option value="corporate">1 500 $ US et plus</option>
+                            <option value="unsure">Je ne sais pas encore</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="message">Votre projet</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Contexte, objectifs, délais souhaités…" required></textarea>
+                    </div>
+
+                    <div class="form-footer">
+                        <button type="submit" class="btn-primary form-submit" id="submit-btn">
+                            <span class="btn-label">Envoyer la demande</span>
+                            <span class="btn-loading" aria-hidden="true"></span>
+                        </button>
+                        <p class="form-note">Réponse sous 24–48h. Aucune information partagée.</p>
+                    </div>
+
+                    <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+                </form>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <div class="about__visual">
-        <div class="about__card">
-          <img class="about__card-flame" src="erezi-studio-logo/erezi-logo-icon-blanc.webp" alt="erezi studio icon">
-          <blockquote class="about__card-quote">
-            « Different by design » n'est pas un slogan. C'est notre façon de travailler.
-          </blockquote>
-          <p class="about__card-text">
-            Chaque décision visuelle est intentionnelle. Nous ne suivons pas les tendances : nous créons des identités conçues pour durer.
-          </p>
-          <div class="about__card-deco" aria-hidden="true"></div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand-block">
+                <img src="erezi-studio-logo/erezi-logo-h_w.webp" alt="Erezi Studio" class="footer-brand">
+                <p class="footer-copy">© 2026 Erezi Studio — Tous droits réservés.</p>
+                <p class="footer-location">Port-au-Prince, Haïti · Travail à distance international</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="https://instagram.com/erezistudio" target="_blank" rel="noopener" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://facebook.com/erezistudio" target="_blank" rel="noopener" aria-label="Facebook">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.592 0 9 1.583 9 4.615V8z"/></svg>
+                    <span>Facebook</span>
+                </a>
+            </div>
+
+            <div class="footer-tagline">
+                <span class="footer-mark">Different by design.</span>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- ===== PROCESS ===== -->
-  <section class="section process" id="process">
-    <div class="container">
-      <div class="section-header process__header">
-        <span class="section__eyebrow">Comment Nous Travaillons</span>
-        <h2 class="section-title">Le processus</h2>
-        <p class="section-subtitle">Une collaboration fluide, transparente et sans mauvaise surprise.</p>
-      </div>
-      <div class="process__steps">
-        <div class="step"><span class="step__num">1</span><h3 class="step__title">Le Brief</h3><p class="step__desc">Vous décrivez votre projet, vos objectifs et votre budget. Le studio vous répond sous 24h.</p></div>
-        <div class="step"><span class="step__num">2</span><h3 class="step__title">Le Démarrage</h3><p class="step__desc">Validation du devis, contrat clair et acompte de 50% pour planifier le projet.</p></div>
-        <div class="step"><span class="step__num">3</span><h3 class="step__title">La Création</h3><p class="step__desc">Présentation des premières propositions, retours et affinage rigoureux de l'identité.</p></div>
-        <div class="step"><span class="step__num">4</span><h3 class="step__title">La Livraison</h3><p class="step__desc">Règlement du solde et transfert de vos fichiers organisés, optimisés et prêts à l'emploi.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CTA BAND ===== -->
-  <div class="cta-band">
-    <div class="container cta-band__inner">
-      <h2 class="cta-band__title">Votre identité mérite mieux que l'ordinaire.</h2>
-      <a href="#contact" class="btn btn--white">Échanger avec le studio</a>
-    </div>
-  </div>
-
-  <!-- ===== CONTACT ===== -->
-  <section class="section section--dark contact" id="contact">
-    <div class="container contact__inner">
-      <div>
-        <span class="section__eyebrow contact__eyebrow">Donnons vie à vos idées</span>
-        <h2 class="section-title light">Démarrer<br />un projet</h2>
-        <p class="section-subtitle light">Réponse garantie sous 24h · Devis personnalisé gratuit.</p>
-
-        <div class="contact__methods">
-          <a href="mailto:contact.erezistudio@gmail.com" class="contact__method">
-            <span class="contact__method-icon">
-              <img src="icons/mail-icon.svg" alt="Email icon">
-            </span>
-            <div><span class="contact__method-label">Email</span><span class="contact__method-value">contact.erezistudio@gmail.com</span></div>
-          </a>
-          <a href="https://wa.me/50955037709" class="contact__method">
-            <span class="contact__method-icon">
-              <img src="icons/whatsapp-icon.svg" alt="WhatsApp icon">
-            </span>
-            <div><span class="contact__method-label">WhatsApp</span><span class="contact__method-value">Message direct</span></div>
-          </a>
-        </div>
-      </div>
-
-      <form class="contact__form" id="contactForm" action="https://formspree.io/f/xzdnewrk" method="POST">
-        <div class="form__row">
-          <div class="form__field">
-            <label class="form__label">Prénom</label>
-            <input type="text" class="form__input" name="prenom" placeholder="Jean" required />
-          </div>
-          <div class="form__field">
-            <label class="form__label">Nom</label>
-            <input type="text" class="form__input" name="nom" placeholder="Robert" required />
-          </div>
-        </div>
-        <div class="form__field">
-          <label class="form__label">Email</label>
-          <input type="email" class="form__input" name="email" placeholder="votre@entreprise.com" required />
-        </div>
-        <div class="form__field">
-          <label class="form__label">Type de projet</label>
-          <select class="form__select" name="projet">
-            <option value="">Choisir un service</option>
-            <option>Identité visuelle — DÉCOUVERTE</option>
-            <option>Identité visuelle — ESSENTIEL</option>
-            <option>Identité visuelle — PRO</option>
-            <option>Identité visuelle — SIGNATURE</option>
-            <option>Réseaux sociaux — ENTRÉE</option>
-            <option>Réseaux sociaux — CONFORT</option>
-            <option>Réseaux sociaux — PREMIUM</option>
-            <option>Print & Événementiel — EXPRESS</option>
-            <option>Print & Événementiel — ÉVÉNEMENT</option>
-            <option>Print & Événementiel — SUR MESURE</option>
-            <option>Autre</option>
-          </select>
-        </div>
-        <div class="form__field">
-          <label class="form__label">Budget approximatif</label>
-          <select class="form__select" name="budget">
-            <option value="">Sélectionner</option>
-            <option>Moins de $100</option>
-            <option>$100 – $300</option>
-            <option>$300 – $600</option>
-            <option>$600 – $1000</option>
-            <option>Plus de $1000</option>
-          </select>
-        </div>
-        <div class="form__field">
-          <label class="form__label">Décrivez votre projet</label>
-          <textarea class="form__textarea" name="message" placeholder="Parlez-nous de votre entreprise, de vos besoins et de vos délais..." required></textarea>
-        </div>
-        <button type="submit" class="btn btn--primary btn--submit">Envoyer la demande →</button>
-        <div id="formFeedback" style="margin-top: 12px;"></div>
-      </form>
-    </div>
-  </section>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="footer__left">
-      <img src="erezi-studio-logo/erezi-logo-icon-rouge.webp" alt="Erezi Studio Icon">
-      <span class="footer__tagline">Different by design.</span>
-      <span class="footer__copy">© 2026 Erezi Studio</span>
-    </div>
-    <ul class="footer__links">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#about">Le Studio</a></li>
-      <li><a href="#process">Processus</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </footer>
-
-  <!-- ===== SCRIPTS ===== -->
-  <script>
-    // Fermeture automatique du menu mobile après clic sur un lien
-    document.addEventListener('DOMContentLoaded', function() {
-      const menuToggle = document.getElementById('menuToggle');
-      const menuLinks = document.querySelectorAll('.nav__links a');
-
-      menuLinks.forEach(function(link) {
-        link.addEventListener('click', function() {
-          if (menuToggle.checked) {
-            menuToggle.checked = false;
-          }
-        });
-      });
-    });
-
-    // Envoi du formulaire
-    const form = document.getElementById('contactForm');
-    const feedback = document.getElementById('formFeedback');
-
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      feedback.innerHTML = '<p style="color: rgba(255,255,255,0.6);">⏳ Envoi en cours...</p>';
-
-      const data = new FormData(form);
-      const action = form.action;
-
-      fetch(action, {
-        method: 'POST',
-        body: data,
-        headers: { 'Accept': 'application/json' }
-      })
-      .then(response => {
-        if (response.ok) {
-          feedback.innerHTML = '<p style="color: #039487; font-weight: 600;"> Merci ! Votre message a bien été envoyé. Le studio vous répond sous 24h.</p>';
-          form.reset();
-        } else {
-          feedback.innerHTML = '<p style="color: #ff6b6b;"> Une erreur est survenue. Merci de réessayer, ou contactez-nous directement sur WhatsApp.</p>';
-        }
-      })
-      .catch(error => {
-        feedback.innerHTML = '<p style="color: #ff6b6b;"> Impossible de se connecter au réseau. Vérifiez votre connexion ou écrivez-nous par e-mail.</p>';
-      });
-    });
-  </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
